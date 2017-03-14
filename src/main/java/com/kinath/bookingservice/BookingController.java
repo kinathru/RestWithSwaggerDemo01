@@ -1,5 +1,6 @@
 package com.kinath.bookingservice;
 
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin
 @RequestMapping("bookingservice")
+@Api(value="Hello World", description="Hello World Controller")
 public class BookingController
 {
     @RequestMapping(method = RequestMethod.GET,value = "/message")
